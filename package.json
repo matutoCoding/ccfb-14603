@@ -1,0 +1,21 @@
+{
+  "name": "tanbei-3d",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "check:sim": "tsx scripts/headless-check.ts",
+    "check:perf": "tsx scripts/perf-check.ts",
+    "check:router": "tsx scripts/router-check.ts",
+    "check": "tsc --noEmit && tsx scripts/router-check.ts && tsx scripts/headless-check.ts && tsx scripts/perf-check.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
